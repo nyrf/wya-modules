@@ -4,6 +4,9 @@ import Tools from './Tools/Tools';
 import Frame from './Frame/Frame';
 import DiyEdit from './Diy/DiyEdit';
 import Save from './Tools/Save';
+
+import { defaultModules } from './Modules/rootConfig';
+
 // store
 import * as types from '../store/actions';
 import { getNewData, initialState } from '../store/store';
@@ -110,10 +113,15 @@ class Combo extends Component {
 			toolsDragging,
 			data: { itemArr = [], itemObj = {} }
 		} = this.state;
-		const { className, onSave, modules } = this.props;
+		const { className, style = {}, onSave, modules } = this.props;
 		// g-fw-w
 		return (
-			<div className={`wya-modules ${className || ""}`} style={{ display: `flex`, overflow: 'scroll' }}>
+			<div 
+				className={`wya-modules ${className || ""}`} 
+				style={
+					{ display: `flex`, overflow: 'scroll', ...style }
+				}
+			>
 				<Tools 
 					onAdd={this.handleAdd}
 					onDragging={this.handleDragging}
@@ -156,5 +164,14 @@ class Combo extends Component {
 	}
 }
 Combo.propTypes = {
+	modules: PropTypes.object,
+	onSave: PropTypes.func,
+	style: PropTypes.object,
+	className: PropTypes.string,
+};
+
+Combo.defaultProps = {
+	modules: defaultModules,
+	onSave: res => console.log(res)
 };
 export default Combo;

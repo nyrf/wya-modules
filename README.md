@@ -27,12 +27,14 @@ render(
 ```
 
 ## 其他
+
 - 如何设置初始数据
 - 如何初始化数据
-```
+
+```jsx
 <WYAModules 
 	ref={(instance) => this.instance = instance}
-	...
+	// ...
 />
 
 // 初始化数据
@@ -40,6 +42,7 @@ this.instance.init(data);
 // 初始化
 this.instance.reset();
 ```
+
 <!--  以下内容无视  -->
 [changelog-image]: https://img.shields.io/badge/changelog-md-blue.svg
 [changelog-url]: CHANGELOG.md
