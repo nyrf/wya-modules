@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react';
+import React, { Component, PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Pop from '../Common/Pop';
 import { Radio, Input } from 'antd';
@@ -10,7 +10,9 @@ class Editor extends PureComponent {
 	render() {
 		return (
 			<Pop title="Tpl" className="v-seme-radio"> 
-				暂时没有编辑
+				<Fragment>
+					<div>暂时没有编辑</div>
+				</Fragment>
 			</Pop>
 		);
 	}

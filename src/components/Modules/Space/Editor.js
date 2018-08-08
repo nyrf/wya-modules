@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react';
+import React, { Component, PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Pop, Inputs, Sliders, Colors, Radios } from '../Common/root';
 
@@ -11,14 +11,16 @@ class Editor extends PureComponent {
 		this.props.onEdited(item, { ...itemData, [key]: value || defaultValue });
 	}
 	render() {
-		const { item, itemData, onEdited } = this.props;
+		const { item, itemData, onEdited, modules } = this.props;
 		const { m_tb } = itemData || {};
 		return (
 			<Pop title="空白高度" className="v-seme-space"> 
-				<Sliders 
-					value={m_tb} 
-					onChange={value => this.handleChange(value, 'm_tb', 0)} 
-				/>
+				<Fragment>
+					<Sliders 
+						value={m_tb} 
+						onChange={value => this.handleChange(value, 'm_tb', 0)} 
+					/>
+				</Fragment>
 			</Pop>
 		);
 	}

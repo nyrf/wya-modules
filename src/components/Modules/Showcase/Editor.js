@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react';
+import React, { Component, PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Pop, Inputs, Sliders, Colors, Radios, Links } from '../Common/root';
 class Editor extends PureComponent {
@@ -11,7 +11,7 @@ class Editor extends PureComponent {
 	}
 
 	render() {
-		const { item, itemData, onEdited } = this.props;
+		const { item, itemData, onEdited, modules } = this.props;
 		const { list = [], m_tb, layout, style } = itemData || {};
 		return (
 			<Pop title="橱窗" className="v-seme-showcase">
@@ -41,6 +41,7 @@ class Editor extends PureComponent {
 					list={list}
 					onChange={value => this.handleChange(value, 'list', {})}
 					placeholder={""}
+					modules={modules}
 				/>
 			</Pop>
 		);

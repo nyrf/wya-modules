@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 class Pop extends Component {
 	constructor(props, context) {
 		super(props, context);
 	}
 	render() {
-		const { title, children, className } = this.props;
+		const { title, children, className, modules } = this.props;
 		return (
 			<div className={`v-se-modules v-sem-edit${className ? ` ${className}` : ''}`} >
 				<div className="_flex _fd-c _pd-10 _mg-10" >

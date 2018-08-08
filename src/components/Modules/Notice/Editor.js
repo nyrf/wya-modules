@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react';
+import React, { Component, PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Pop, Inputs, Sliders, Colors, Radios, Links } from '../Common/root';
 class Editor extends PureComponent {
@@ -11,30 +11,32 @@ class Editor extends PureComponent {
 	}
 
 	render() {
-		const { item, itemData, onEdited } = this.props;
+		const { item, itemData, onEdited, modules } = this.props;
 		const { list = [], m_tb, title, bg_color, color } = itemData || {};
 		return (
 			<Pop title="公告" className="v-seme-notice">
-				<Sliders 
-					value={m_tb} 
-					onChange={value => this.handleChange(value, 'm_tb', 0)} 
-				/>
-				<Inputs 
-					label="公告内容:" 
-					placeholder="请输入公告内容"
-					onChange={value => this.handleChange(value, 'title', '')}
-					value={title}
-				/>
-				<Colors 
-					label="背景颜色:" 
-					onChange={value => this.handleChange(value, 'bg_color', '')}
-					value={bg_color}
-				/>
-				<Colors 
-					label="文字颜色:" 
-					onChange={value => this.handleChange(value, 'color', '')}
-					value={color}
-				/>
+				<Fragment>
+					<Sliders 
+						value={m_tb} 
+						onChange={value => this.handleChange(value, 'm_tb', 0)} 
+					/>
+					<Inputs 
+						label="公告内容:" 
+						placeholder="请输入公告内容"
+						onChange={value => this.handleChange(value, 'title', '')}
+						value={title}
+					/>
+					<Colors 
+						label="背景颜色:" 
+						onChange={value => this.handleChange(value, 'bg_color', '')}
+						value={bg_color}
+					/>
+					<Colors 
+						label="文字颜色:" 
+						onChange={value => this.handleChange(value, 'color', '')}
+						value={color}
+					/>
+				</Fragment>
 			</Pop>
 		);
 	}

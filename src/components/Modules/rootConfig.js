@@ -7,8 +7,8 @@ import './ModulesEdit.scss';
 /**
  * roots
  */
-import { Radio } from './Radio/root';
-import { Input } from './Input/root';
+// import { Radio } from './Radio/root';
+// import { Input } from './Input/root';
 import { Title } from './Title/root';
 import { TextNav } from './TextNav/root';
 import { ImgNav } from './ImgNav/root';
@@ -26,8 +26,8 @@ import { Goods } from './Goods/root';
 import { Voice } from './Voice/root';
 
 export const defaultModules = {
-	Radio,
-	Input,
+	// Radio,
+	// Input,
 	Title,
 	TextNav,
 	ImgNav,

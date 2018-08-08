@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react';
+import React, { Component, PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Pop, Inputs, Sliders, Colors, Radios, Links } from '../Common/root';
 class Editor extends PureComponent {
@@ -11,22 +11,25 @@ class Editor extends PureComponent {
 	}
 
 	render() {
-		const { item, itemData, onEdited } = this.props;
+		const { item, itemData, onEdited, modules } = this.props;
 		const { list = [], m_tb, layout, style } = itemData || {};
 		return (
 			<Pop title="顶部导航" className="v-seme-top-nav">
-				<Sliders 
-					value={m_tb} 
-					onChange={value => this.handleChange(value, 'm_tb', 0)} 
-				/>
-				<Links
-					max={5}
-					item={item}
-					list={list}
-					onChange={value => this.handleChange(value, 'list', {})}
-					placeholder={""}
-					type="link"
-				/>
+				<Fragment>
+					<Sliders 
+						value={m_tb} 
+						onChange={value => this.handleChange(value, 'm_tb', 0)} 
+					/>
+					<Links
+						max={5}
+						item={item}
+						list={list}
+						onChange={value => this.handleChange(value, 'list', {})}
+						placeholder={""}
+						type="link"
+						modules={modules}
+					/>
+				</Fragment>
 			</Pop>
 		);
 	}
