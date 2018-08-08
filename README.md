@@ -15,7 +15,7 @@ npm install wya-modules --save
 import React from 'react';
 import { render } from 'react-dom';
 import { WYAModules, defaultModules } from 'wya-modules';
-import { Pop, Inputs, Sliders, Colors, Radios } from 'wya-modules';
+import { Pop, Inputs, Sliders, Colors, Radios, Popovers, Links } from 'wya-modules';
 
 render(
 	<WYAModules 
