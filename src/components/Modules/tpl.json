@@ -1,0 +1,137 @@
+[
+	{
+		"type": "Title",
+		"content": {
+			"m_tb": 18,
+			"title": "我是标题",
+			"style": "left",
+			"bg_corlor": "#252b3a", 
+			"color": "#f8f8f8"
+		}
+	}, 
+	{
+		"type": "TextNav",
+		"content": {
+			"m_tb": 0,
+			"is_show": 1,
+			"list": [ 
+				{
+					"title": "我是文本导航",
+					"url": "/shop/cart"
+				}, 
+				{
+					"title": "我是文本导航",
+					"url": "/shop/mine",
+				}
+			]
+		}
+	}, 
+	{
+		"type": "ImgNav",
+		"content": {
+			"m_tb": 0,
+			"style": "1",
+			"type": "1",
+			"list": [
+				{
+					"title": "我是图片导航",
+					"url": "/shop/mine",
+					"img": "http://oss.ruishan666.com/image/testzy/171016/124168708267/6.jpg"
+				}
+			]
+		}
+	},
+	{
+		"type": "TopNav",
+		"content": {
+			"m_tb": 0,
+			"list": [
+				{
+					"title": "我的顶部导航",
+					"url": "/shop/mine?admin_id=22240",
+					"bg_color": "#0de069",
+					"color": "#ff12ff"
+				}
+			]
+		}
+	},
+	{
+		"type": "Showcase",
+		"content": {
+			"m_tb": 0,
+			"style": "1",
+			"list": [
+				{
+					"img": "http://oss.ruishan666.com/image/testzy/171012/802043315718/u=2921818318,2812504695&fm=26&gp=0.jpg",
+					"url": "/shop/mine?admin_id=22240",
+					"is_show": "true",
+					"title": "会员主页"
+				},
+				{
+					"img": "http://oss.ruishan666.com/image/testzy/171012/802043175691/u=3293953220,696886410&fm=26&gp=0.jpg",
+					"url": "/shop/mine?admin_id=22240",
+					"is_show": "true",
+					"title": "会员主页"
+				},
+				{
+					"img": "http://oss.ruishan666.com/image/testzy/171012/802042515690/u=2399198435,3032380724&fm=26&gp=0.jpg",
+					"url": "/shop/mine?admin_id=22240",
+					"is_show": "true",
+					"title": "会员主页"
+				}
+			]
+		}
+	},
+	{
+		"type": "Slide",
+		"content": {
+			"m_tb": 0,
+			"style": "1",
+			"list": [
+				{
+					"img": "http://oss.ruishan666.com/image/testzy/171016/135142994917/7.jpg",
+					"url": "/shop/mine?admin_id=22240",
+					"title": "会员主页"
+				}
+			]
+		}
+	},
+	{
+		"type": "Rtf",
+		"content": {
+			"m_tb": 3,
+			"rtf": {
+				"raw": "",
+				"html": ""
+			}
+		}
+	},
+	{
+		"type": "Notice",
+		"content": {
+			"m_tb": 0,
+			"title": "我是公告",
+			"bg_color": "#1f9150",
+			"coloor": "#4249a1"
+		}
+	},
+	{
+		"type": "CutOff",
+		"content": {
+			"m_tb": 30
+		}
+	},
+	{
+		"type": "Space",
+		"content": {
+			"m_tb": 40
+		}
+	},
+	{
+		"type": "Viedo",
+		"content": {
+			"m_tb": 0,
+			"url": "/"
+		}
+	}
+]

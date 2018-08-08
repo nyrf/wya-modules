@@ -1,0 +1,37 @@
+.v-se-tools{
+	flex: 0 0 400px;
+	width: 400px;
+	background: #ededf4;
+	padding: 20px;
+	margin: 30px;
+	border-radius: 3px;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
+	._title {
+		text-align: center;
+		padding: 15px;
+		font-size: 18px;
+	}
+	._childs {
+		display: flex;
+		box-sizing: border-box;
+		flex-wrap: wrap;
+		._div {
+			flex: 0 0 33.33333%;
+			display: flex;
+			box-sizing: border-box;
+			justify-content: center
+		}
+		._item {
+			border: 1px solid gray;
+			background-color: white;
+			line-height: 30px;
+			text-align: center;
+			width: 70px;
+			margin: 0 15px 15px 15px;
+			cursor: move;
+			border-radius: 3px;
+		}
+	}
+}
