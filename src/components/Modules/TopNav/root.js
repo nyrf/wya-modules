@@ -1,9 +1,4 @@
-/**
- * @type
- * 0: 基础组件
- * 1: 其他组件
- * 2: 营销组件
- */
+
 import Viewer from './Viewer';
 import Editor from './Editor';
 const listItem = {
@@ -13,7 +8,7 @@ const listItem = {
 	"color": "#000"
 };
 export const TopNav = {
-	type: 0,
+	type: '基础组件',
 	name: "顶部导航",
 	Viewer,
 	Editor, 

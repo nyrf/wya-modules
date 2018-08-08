@@ -52,13 +52,13 @@ class Combo extends Component {
 	// - 数据管理
 	// 添加
 	handleAdd = (atType, sorting) => {
-		const { rootConfig } = this.props;
+		const { modules } = this.props;
 		const atIndex = this.getItemIndex(sorting);
 		this.setNewData({
 			type: types.WYA_MODULES_ADD,
 			atType,
 			atIndex: atIndex >= 0 ? atIndex : null,
-			data: rootConfig[atType].data
+			data: modules[atType].data
 		});
 	}
 	// 排序
@@ -110,7 +110,7 @@ class Combo extends Component {
 			toolsDragging,
 			data: { itemArr = [], itemObj = {} }
 		} = this.state;
-		const { className, onSave, rootConfig, toolsTitle } = this.props;
+		const { className, onSave, modules } = this.props;
 		// g-fw-w
 		return (
 			<div className={`wya-modules ${className || ""}`} style={{ display: `flex`, overflow: 'scroll' }}>
@@ -118,9 +118,8 @@ class Combo extends Component {
 					onAdd={this.handleAdd}
 					onDragging={this.handleDragging}
 					sorting={sorting}
-
-					toolsTitle={toolsTitle}
-					rootConfig={rootConfig}
+					
+					modules={modules}
 				/>
 				<Frame 
 					itemArr={itemArr}
@@ -135,14 +134,14 @@ class Combo extends Component {
 					editing={editing}
 					sorting={sorting}
 
-					rootConfig={rootConfig}
+					modules={modules}
 				/>
 				<DiyEdit 
 					item={editing} 
 					itemData={itemObj[editing]} 
 					onEdited={this.handleEdited}
 
-					rootConfig={rootConfig}
+					modules={modules}
 				/>
 				<Save 
 					editing={editing}
@@ -150,7 +149,7 @@ class Combo extends Component {
 					itemObj={itemObj}
 					onSave={onSave}
 
-					rootConfig={rootConfig}
+					modules={modules}
 				/>
 			</div>
 		);

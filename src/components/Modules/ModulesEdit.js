@@ -1,9 +1,9 @@
 import React, { Component, createElement } from 'react';
 const ModulesEdit = (props) => {
-	const { item, rootConfig } = props;
+	const { item, modules } = props;
 	const type = item ? item.split('#')[0] : null;
-	return rootConfig[type] 
-		? createElement(rootConfig[type].Editor, {
+	return modules[type] 
+		? createElement(modules[type].Editor, {
 			...props
 		})
 		: null;

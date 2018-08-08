@@ -1,13 +1,7 @@
-/**
- * @type
- * 0: 基础组件
- * 1: 其他组件
- * 2: 营销组件
- */
 import Viewer from './Viewer';
 import Editor from './Editor';
 export const CutOff = {
-	type: 1,
+	type: '其他组件',
 	name: "分割线",
 	Viewer,
 	Editor, 

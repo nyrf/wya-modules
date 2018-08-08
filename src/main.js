@@ -1,2 +1,3 @@
 export WYAModules from './components/RootComponent';
-export { defaultRootConfig, defaultToolsTitle } from './components/Modules/rootConfig';
+export { Pop, Inputs, Sliders, Colors, Radios } from './components/Modules/Common/root';
+export { defaultModules } from './components/Modules/rootConfig';

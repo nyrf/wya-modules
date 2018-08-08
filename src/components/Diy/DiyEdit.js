@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ModulesEdit from '../Modules/ModulesEdit';
 
-class Modules extends Component {
+class DiyEdit extends Component {
 	constructor(props, context) {
 		super(props, context);
 	}
@@ -14,7 +14,7 @@ class Modules extends Component {
 		
 	}
 }
-Modules.propTypes = {
+DiyEdit.propTypes = {
 
 };
-export default Modules;
+export default DiyEdit;

@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Input, message } from 'antd';
-import rootConfig from '../rootConfig';
 import Colors from './Colors';
 import Popovers from './Popovers';
 import { PGallery } from 'wya-rc';
@@ -33,9 +32,9 @@ class Links extends Component {
 
 	}
 	handleAdd = () => {
-		const { item, list } = this.props;
+		const { item, list, modules } = this.props;
 		const type = item.split('#')[0];
-		const listItem = rootConfig[type].listItem || {};
+		const listItem = modules[type].listItem || {};
 		this.props.onChange && this.props.onChange([...list, listItem]);
 	}
 	handleDel = (e, index) => {

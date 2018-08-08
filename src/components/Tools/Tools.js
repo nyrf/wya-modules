@@ -5,11 +5,11 @@ import { Button } from 'antd';
 
 class Tools extends Component {
 	getToolsName = () => {
-		const { rootConfig } = this.props;
-		let toolsList = [];
-		for (let key in rootConfig) {
-			if (rootConfig.hasOwnProperty(key)) {
-				let item = rootConfig[key];
+		const { modules } = this.props;
+		let toolsList = {};
+		for (let key in modules) {
+			if (modules.hasOwnProperty(key)) {
+				let item = modules[key];
 				let type = item.type;
 				if (!toolsList[type]) {
 					toolsList[type] = [];
@@ -20,22 +20,23 @@ class Tools extends Component {
 				});
 			}
 		}
+
 		return {
-			toolsList
+			toolsList,
 		};
 	}
 	render() {
 		const { toolsList } = this.getToolsName();
-		const { toolsTitle = {} } = this.props;
 		return (
 			<div className="v-se-tools">
 				<div style={{ overflow: 'hidden', clear: 'both' }}>
 					{
-						toolsList.map((item, index) => {
+						Object.keys(toolsList).map((key, index) => {
+							const item = toolsList[key];
 							return (
 								<Fragment key={index}>
 									<div className="_title">
-										{toolsTitle[index] || `工具 ${index}`}
+										{key || `工具 ${index}`}
 									</div>
 									<div className="_childs">
 										{

@@ -14,17 +14,31 @@ npm install wya-modules --save
 ```jsx
 import React from 'react';
 import { render } from 'react-dom';
-import { WYAModules, defaultRootConfig, defaultToolsTitle } from '../src/main';
+import { WYAModules, defaultModules } from 'wya-modules';
+import { Pop, Inputs, Sliders, Colors, Radios } from 'wya-modules';
 
 render(
 	<WYAModules 
-		rootConfig={defaultRootConfig} 
-		toolsTitle={defaultToolsTitle}
+		modules={defaultModules} 
 		onSave={(res) => { console.log(res); }}
 	/>, 
 	document.getElementById('pages')
 );
+```
 
+## 其他
+- 如何设置初始数据
+- 如何初始化数据
+```
+<WYAModules 
+	ref={(instance) => this.instance = instance}
+	...
+/>
+
+// 初始化数据
+this.instance.init(data);
+// 初始化
+this.instance.reset();
 ```
 <!--  以下内容无视  -->
 [changelog-image]: https://img.shields.io/badge/changelog-md-blue.svg

@@ -1,11 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { WYAModules, defaultRootConfig, defaultToolsTitle } from '../src/main';
+import { WYAModules, defaultModules } from '../src/main';
 
 render(
 	<WYAModules 
-		rootConfig={defaultRootConfig} 
-		toolsTitle={defaultToolsTitle}
+		modules={defaultModules} 
 		onSave={(res) => { console.log(res); }}
 	/>, 
 	document.getElementById('pages')

@@ -1,9 +1,4 @@
-/**
- * @type
- * 0: 基础组件
- * 1: 其他组件
- * 2: 营销组件
- */
+
 import Viewer from './Viewer';
 import Editor from './Editor';
 const listItem = {
@@ -12,7 +7,7 @@ const listItem = {
 	"img": "http://oss.ruishan666.com/image/testzy/171016/124168708267/6.jpg"
 };
 export const ImgNav = {
-	type: 0,
+	type: '基础组件',
 	name: "图片导航",
 	Viewer,
 	Editor, 

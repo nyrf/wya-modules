@@ -9,7 +9,7 @@ class Save extends Component {
 	handleSave = () => {
 
 		let diy = [];
-		const { editing, itemArr, itemObj, rootConfig } = this.props;
+		const { editing, itemArr, itemObj, modules } = this.props;
 
 		diy = itemArr.map((item, index) => {
 			const type = item.split('#')[0];
@@ -22,8 +22,8 @@ class Save extends Component {
 		for (let i = 0; i < diy.length; i++) {
 			let item = diy[i];
 			let type = item.type;
-			if (rootConfig[type].dataValidity) {
-				let error = rootConfig[type].dataValidity(item.content || {});
+			if (modules[type].dataValidity) {
+				let error = modules[type].dataValidity(item.content || {});
 				if (error) {
 					message.error(`第${i + 1}个 - ${error.error}`);
 					return;
@@ -34,11 +34,11 @@ class Save extends Component {
 		this.props.onSave(diy);
 	}
 	handlePreview = () => {
-		const { itemArr, itemObj, rootConfig } = this.props;
+		const { itemArr, itemObj, modules } = this.props;
 		Preview.popup({
 			itemArr,
 			itemObj,
-			rootConfig
+			modules
 		}).then(() => {
 
 		}).catch((e) => {

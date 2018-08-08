@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { DragSource, DropTarget } from 'react-dnd';
 import itemTypes from '../itemTypes';
-import Modules from '../Modules/Modules';
+import ModulesView from '../Modules/ModulesView';
 
 const style = {
 	cursor: 'move',
@@ -112,7 +112,7 @@ class SourceTarget extends Component {
 	}
 	render() {
 		const { isDragging, connectDragSource, connectDropTarget } = this.props;
-		const { item, lastItem, itemData, onEditing, onDel, editing, toolsDragging, sorting, rootConfig  } = this.props;
+		const { item, lastItem, itemData, onEditing, onDel, editing, toolsDragging, sorting, modules  } = this.props;
 		const { hover } = this.state;
 		const opacity = isDragging ? 0 : 1;
 		let border = hover ? "1px dashed #108ee9" : "none";
@@ -138,12 +138,12 @@ class SourceTarget extends Component {
 										onClick={this.handleDel} 
 									>&#10005;</p>
 							}
-							<Modules 
+							<ModulesView 
 								item={item} 
 								itemData={itemData} 
 								styleObj={{ minHeight: (hover ? 20 : 3) }} 
 								inFrame={true}
-								rootConfig={rootConfig}
+								modules={modules}
 							/>
 						</div>
 					))

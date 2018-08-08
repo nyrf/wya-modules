@@ -2,7 +2,7 @@
  * css
  */
 import './Common.scss';
-import './Modules.scss';
+import './ModulesView.scss';
 import './ModulesEdit.scss';
 /**
  * roots
@@ -25,15 +25,7 @@ import { Slide } from './Slide/root';
 import { Goods } from './Goods/root';
 import { Voice } from './Voice/root';
 
-/**
- * @type
- */
-export const defaultToolsTitle = {
-	0: "基本工具",
-	1: "其他工具",
-	2: "营销功能",
-};
-export const defaultRootConfig = {
+export const defaultModules = {
 	Radio,
 	Input,
 	Title,

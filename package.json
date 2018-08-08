@@ -1,6 +1,6 @@
 {
   "name": "wya-modules",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "wya-modules for js",
   "main": "index.js",
   "files": [

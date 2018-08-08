@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { DropTarget } from 'react-dnd';
 import itemTypes from '../itemTypes';
-import Diy from '../Diy/Diy';
+import DiyView from '../Diy/DiyView';
 import './Frame.scss';
 const spec = {
 	drop(props, monitor, instance) {
@@ -34,7 +34,7 @@ class Frame extends Component {
 	}
 	render() {
 		const { canDrop, isOver, connectDropTarget } = this.props;
-		const { itemObj, itemArr, onFind, onSorted, onSorting, onEditing, onDel, editing, toolsDragging, sorting, rootConfig } = this.props;
+		const { itemObj, itemArr, onFind, onSorted, onSorting, onEditing, onDel, editing, toolsDragging, sorting, modules } = this.props;
 		const isActive = canDrop && isOver;
 		let border = '1px solid #222';
 		if (isActive) {
@@ -51,7 +51,7 @@ class Frame extends Component {
 								itemArr.map((item, index) => {
 									const lastItem = index === itemArr.length - 1;
 									return (
-										<Diy 
+										<DiyView 
 											key={`${item}`} // 不要变化，否则影响排序R
 											item={item}
 											itemData={itemObj[item]}
@@ -64,7 +64,7 @@ class Frame extends Component {
 											editing={editing}
 											sorting={sorting}
 											lastItem={lastItem}
-											rootConfig={rootConfig}
+											modules={modules}
 										/>
 									);
 								})

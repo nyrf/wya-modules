@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import { CreatePortalFunc } from 'wya-rc';
 import './Preview.scss';
-import Modules from '../Modules/Modules';
+import ModulesView from '../Modules/ModulesView';
 @CreatePortalFunc({
 	cName: 'wya-modules-preview'
 })
@@ -44,7 +44,7 @@ class Preview extends Component {
 		}, 201);
 	}
 	render() {
-		const { itemArr, itemObj, rootConfig } = this.props;
+		const { itemArr, itemObj, modules } = this.props;
 		return (
 			<div className="v-se-preview" ref={this.setEl}>
 				<div className="__mask" onClick={this.handleClose}/>
@@ -53,11 +53,11 @@ class Preview extends Component {
 						{
 							itemArr.map((item, index) => {
 								return (
-									<Modules 
+									<ModulesView 
 										key={`${item}`}
 										item={item}
 										itemData={itemObj[item]}
-										rootConfig={rootConfig}
+										modules={modules}
 									/>
 								);
 							})
