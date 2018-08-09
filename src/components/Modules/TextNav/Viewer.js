@@ -17,7 +17,7 @@ class TextNav extends PureComponent {
 			list = [],
 		} = itemData || {};
 		return (
-			<div className="v-se-modules _pe-none v-sem-text-nav" style={{ margin: `${m_tb}px 0` }}>
+			<div className="wya-me-modules _pe-none wya-mem-text-nav wya-me-reset" style={{ margin: `${m_tb}px 0` }}>
 				<ul className="_text-nav _bg-white">
 					{list.map((_item, index) => {
 						let { url, title, color, bg_color } = _item;

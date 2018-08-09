@@ -21,7 +21,7 @@ class ImgNav extends Component {
 		const isAuto = layout == 1;
 		const liWidth = (isAuto && list.length > 0) ? { width: (100 / list.length + '%') } : {};
 		return (
-			<div className="v-se-modules _pe-none v-sem-img-nav" style={{ margin: `${m_tb}px 0` }}>
+			<div className="wya-me-modules _pe-none wya-mem-img-nav wya-me-reset" style={{ margin: `${m_tb}px 0` }}>
 				<ul
 					className={
 						classnames(

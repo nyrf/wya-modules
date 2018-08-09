@@ -23,7 +23,7 @@ class Search extends PureComponent {
 		const { item, itemData } = this.props;
 		const { title, m_tb } = itemData || {};
 		return (
-			<div className="v-se-modules _pe-none v-sem-search" style={{ margin: `${m_tb}px 0` }}>
+			<div className="wya-me-modules _pe-none wya-mem-search" style={{ margin: `${m_tb}px 0` }}>
 				<SearchBar 
 					value={this.state.value}
 					placeholder={title || "搜索"}

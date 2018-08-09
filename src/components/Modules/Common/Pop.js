@@ -7,7 +7,7 @@ class Pop extends Component {
 	render() {
 		const { title, children, className, modules } = this.props;
 		return (
-			<div className={`v-se-modules v-sem-edit${className ? ` ${className}` : ''}`} >
+			<div className={`wya-me-modules wya-mem-edit${className ? ` ${className}` : ''}`} >
 				<div className="_flex _fd-c _pd-10 _mg-10" >
 					<p className="_mg-0 _lh-24"> {title} </p>
 					<div className="v-seme-pop">

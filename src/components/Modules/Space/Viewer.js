@@ -16,7 +16,7 @@ class Space extends PureComponent {
 		} = itemData || {};
 		return (
 			<div 
-				className="v-se-modules _pe-none v-sem-space" 
+				className="wya-me-modules _pe-none wya-mem-space" 
 				style={{ margin: `${m_tb}px 0`, ...styleObj }} 
 			/>
 		);

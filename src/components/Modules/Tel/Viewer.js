@@ -26,7 +26,7 @@ class Tel extends PureComponent {
 			color: dStyle.color
 		};
 		return (
-			<div className="v-se-modules _pe-none v-sem-tel" style={dStyle}>
+			<div className="wya-me-modules _pe-none wya-mem-tel" style={dStyle}>
 				<Icon type="phone" style={{ padding: `0 8px`, ...tStyle }}/>
 				<a href={'tel:' + tel} style={{ ...tStyle }}>{name} {tel}</a>
 			</div>

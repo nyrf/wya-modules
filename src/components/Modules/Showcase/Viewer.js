@@ -29,7 +29,7 @@ class Showcase extends PureComponent {
 			height: width,
 		};
 		return (
-			<div className="v-se-modules _pe-none v-sem-showcase" style={{ margin: `${m_tb}px 0` }}>
+			<div className="wya-me-modules _pe-none wya-mem-showcase" style={{ margin: `${m_tb}px 0` }}>
 				{style && style == 1
 					? (
 						<div className={classnames( `_style-${style}`, '_flex _row')}>

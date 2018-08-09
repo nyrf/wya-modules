@@ -50,7 +50,7 @@ class Voice extends PureComponent {
 				onClick = {this.handleVoice}
 				className={
 					classnames(
-						"v-se-modules v-sem-voice _row _pe-none",
+						"wya-me-modules wya-mem-voice _row _pe-none",
 						{ "_disabled": this.state.status }
 					)
 				}

@@ -53,7 +53,7 @@ class Popovers extends Component {
 	}
 	renderContent = () => {
 		return (
-			<div className="v-se-modules">
+			<div className="wya-me-modules">
 				<div className="_flex _fd-c">
 					{
 						listDefault.map((item, index) => {

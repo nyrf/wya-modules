@@ -17,7 +17,7 @@ class TopNav extends PureComponent {
 			m_tb
 		} = itemData || {};
 		return (
-			<div className="v-se-modules _pe-none v-sem-top-nav" style={{ margin: `${m_tb}px 0`, textAlign: 'center' }}>
+			<div className="wya-me-modules _pe-none wya-mem-top-nav" style={{ margin: `${m_tb}px 0`, textAlign: 'center' }}>
 				<ul
 					className={
 						classnames(

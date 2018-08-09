@@ -23,7 +23,7 @@ class Notice extends Component {
 			margin: `${m_tb}px 0`
 		};
 		return (
-			<div className="v-se-modules _pe-none v-sem-notice" style={dStyle}>
+			<div className="wya-me-modules _pe-none wya-mem-notice" style={dStyle}>
 				<div className="_flex" style={{ padding: 10 }}>
 					<div className="_icon">
 						<Icon type="sound" style={{ color: "#fc6b47" }}/>

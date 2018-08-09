@@ -24,11 +24,11 @@ class Frame extends Component {
 	};
 	componentDidMount(){
 		// 设置实际高度 这里可以操作dom节点
-		const $frame = document.querySelector(".v-se-frame");
+		const $frame = document.querySelector(".wya-me-frame");
 		let frameH = window.innerHeight - $frame.offsetTop;
 		$frame.style.height = `${frameH = frameH > 736 ? 736 : frameH}px`;
 		// content
-		const $content = document.querySelector(".v-se-frame ._content");
+		const $content = document.querySelector(".wya-me-frame ._content");
 		let contentH = window.innerHeight - $content.offsetTop;
 		$content.style.height = `${contentH = contentH > 562 ? 562 : contentH}px`;
 	}
@@ -43,7 +43,7 @@ class Frame extends Component {
 			border = '1px solid darkkhaki';
 		}
 		return (
-			<div className="v-se-frame">
+			<div className="wya-me-frame">
 				{
 				 	connectDropTarget(
 				 		<div className="_content">

@@ -1,10 +1,16 @@
 @charset "utf-8";
-.v-se-reset {
+.wya-me-reset {
+	*,:after,:before {
+	    margin: 0;
+	    padding: 0;
+	    border: none;
+	    box-sizing: border-box;
+	}
 	ul, ol, li {
 		list-style: inherit;
 	}
 }
-.v-se-modules {
+.wya-me-modules {
 	font-size: 13px;
 	&._pe-none {
 		pointer-events: none;

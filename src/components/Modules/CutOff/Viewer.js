@@ -18,7 +18,7 @@ class Cutoff extends PureComponent {
 		} = itemData || {};
 		return (
 			<div 
-				className="v-se-modules _pe-none v-sem-cut-off" 
+				className="wya-me-modules _pe-none wya-mem-cut-off" 
 				style={{
 					margin: `${m_tb}px 0`,
 					borderTop: `${style} 1px ${color || 'red'}`,

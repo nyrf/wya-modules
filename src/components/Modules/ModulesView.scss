@@ -11,7 +11,7 @@ $width: 320px;
 /**
  * Title
  */
-.v-sem-title {
+.wya-mem-title {
 	background: #fff;
 	._title {
 		width: 100%;
@@ -44,7 +44,7 @@ $width: 320px;
 /**
  * TextNav
  */
-.v-sem-text-nav {
+.wya-mem-text-nav {
 	line-height: 40px;
 	background: #fff;
 }
@@ -52,7 +52,7 @@ $width: 320px;
 /**
  * ImgNav
  */
-.v-sem-img-nav {
+.wya-mem-img-nav {
 	._layout-1 {
 		overflow: hidden;
 		._li {
@@ -143,7 +143,7 @@ $width: 320px;
 /**
  * Showcase
  */
-.v-sem-showcase {
+.wya-mem-showcase {
 	._style-1 {
 		._text {
 			position: absolute;
@@ -190,7 +190,7 @@ $width: 320px;
  * TopNav
  */
 
-.v-sem-top-nav {
+.wya-mem-top-nav {
 	._ul {
 		list-style: none;
 		a {
@@ -219,7 +219,7 @@ $width: 320px;
  * Notice
  */
 
-.v-sem-notice {
+.wya-mem-notice {
 	._icon {
 		width: 25px;
 	}
@@ -229,7 +229,7 @@ $width: 320px;
  * Video
  */
 
-.v-sem-video {
+.wya-mem-video {
 	._iframe {
 		width: 100%;
 		height: 200px;
@@ -240,7 +240,7 @@ $width: 320px;
  * Rtf
  */
 
-.v-sem-rtf img{
+.wya-mem-rtf img{
 	width: 100%;
 	vertical-align: middle;
 }
@@ -248,14 +248,14 @@ $width: 320px;
 /**
   * Tel
   */
-.v-sem-tel {
+.wya-mem-tel {
 	padding: 8px;
 }
 
 /**
   * Goods
   */
-.v-sem-goods {
+.wya-mem-goods {
 	._style-2 {
 		._item-container {
 			position: relative;
@@ -410,7 +410,7 @@ $width: 320px;
 /**
  * Voice
  */
-.v-sem-voice {
+.wya-mem-voice {
 	height: 50px;
 	._vcontent {
 		padding: 5px;
@@ -480,7 +480,7 @@ $width: 320px;
 /**
 * 秒杀
 */
-.v-sem-sec-kill {
+.wya-mem-sec-kill {
 	._button {
 		display: inline-block;
 		box-sizing: border-box;

@@ -50,7 +50,7 @@ class Slide extends Component {
 			autoplayInterval: 2000
 		};
 		return (
-			<div className="v-se-modules v-sem-slide _row _pe-none" style={{ margin: `${m_tb}px 0` }}>
+			<div className="wya-me-modules wya-mem-slide _row _pe-none" style={{ margin: `${m_tb}px 0` }}>
 				{style == 1
 					? (
 						<Carousel {...settings} ref="carousel">

@@ -22,7 +22,7 @@ class Video extends PureComponent {
 		} = itemData || {};
 		// const src = "https://v.qq.com/iframe/player.html?vid=" + code + "&height=200&auto=0";
 		return (
-			<div className="v-se-modules _pe-none v-sem-video" style={{ margin: `${m_tb}px 0` }}>
+			<div className="wya-me-modules _pe-none wya-mem-video" style={{ margin: `${m_tb}px 0` }}>
 				{
 					// inFrame 
 					// 	? (

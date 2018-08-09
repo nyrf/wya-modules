@@ -28,7 +28,7 @@ class Title extends PureComponent {
 			}
 		};
 		return (
-			<div className="v-se-modules _pe-none v-sem-title" style={{ margin: `${m_tb}px 0` }}>
+			<div className="wya-me-modules _pe-none wya-mem-title" style={{ margin: `${m_tb}px 0` }}>
 				<div className="_flex">
 					{style == 2 && <span style={{ width: 6, background: `${bg_color}`, marginLeft: 10 }} />}
 					<div

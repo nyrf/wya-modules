@@ -20,7 +20,7 @@ class Goods extends PureComponent {
 			style
 		} = itemData || {};
 		return (
-			<div className="v-se-modules _pe-none v-sem-goods" style={{ margin: `${m_tb}px 0`, ...styleObj }}>
+			<div className="wya-me-modules _pe-none wya-mem-goods" style={{ margin: `${m_tb}px 0`, ...styleObj }}>
 				<div className={classnames('_flex', '_fw', `_style-${style}`)}>
 					{
 						list.map((item, index) => {

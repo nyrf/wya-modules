@@ -28,7 +28,7 @@ class Tools extends Component {
 	render() {
 		const { toolsList } = this.getToolsName();
 		return (
-			<div className="v-se-tools">
+			<div className="wya-me-tools">
 				<div style={{ overflow: 'hidden', clear: 'both' }}>
 					{
 						Object.keys(toolsList).map((key, index) => {

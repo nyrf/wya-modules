@@ -46,7 +46,7 @@ class Preview extends Component {
 	render() {
 		const { itemArr, itemObj, modules } = this.props;
 		return (
-			<div className="v-se-preview" ref={this.setEl}>
+			<div className="wya-me-preview" ref={this.setEl}>
 				<div className="__mask" onClick={this.handleClose}/>
 				<div className="__container">
 					<div className="__content">
