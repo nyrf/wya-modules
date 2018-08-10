@@ -46,7 +46,7 @@ let demoConfig = {
 		 * html引用路径
 		 * publicPath: ENV_IS_DEV ? './' : 'https://cdn.example.com/'
 		 */
-		publicPath: '/wya-modules/demo'
+		publicPath: '/wya-modules/demo/'
 	},
 	plugins: [
 		/**
